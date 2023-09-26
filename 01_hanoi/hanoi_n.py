@@ -1,4 +1,4 @@
-'''towers of hanoi for n towers and n rings'''
+'''towers of hanoi for m towers and n rings'''
 
 from typing import TypeVar, Generic, List, Dict
 
@@ -47,7 +47,7 @@ def hanoi(begin: Stack[int], end: Stack[int], temp: Stack[int], n: int) -> None:
 def hanoi_n(n: int, m:int) -> Dict[int, Stack[int]]:
     # base case
     if n==3 and m==3:
-        hanoi(stacks[1], stacks[2], stacks[3], 3)
+        hanoi(stacks[1], stacks[3], stacks[2], 3)
     else:
         # put aside rings to towers beyond 3
         for i in range(2, m-1):
