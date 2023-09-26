@@ -1,6 +1,6 @@
 # Towers of Hanoi 
 
-## 1. 3 rings for 3 towers
+## 3 rings for 3 towers
 
 In the classic problem we have 3 rings and 3 towers. To build the recursion, we list the requisite push and pop movements.
 
@@ -29,9 +29,9 @@ def hanoi(b, e, t, n):
 ```
 Turns out this algorithm works for n rings, as long as there are 3 towers.
 
-![hanoi](./hanoi.png)
+![hanoi](./images/hanoi.png)
 
-## 2. n rings for m towers
+## n rings for m towers
 
 We want to solve for a generalized tower of hanoi with n rings and m towers.
 
@@ -64,4 +64,4 @@ Instead we build on top of the already existing recursion for 3 towers, by refor
 
 The number of additional steps of this method compared to 3 towers is linear with j towers. Next steps would be to assess whether a generalized recursion would take less steps.
 
-![hanoi_n](./hanoi_n.png)
+![hanoi_n](./images/hanoi_n.png)
